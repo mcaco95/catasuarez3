@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Base styles */
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: futura-pt, sans-serif;
+  font-weight: 400; /* Book weight for body text */
+  min-height: 100vh;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Selection Style */
+::selection {
+  background-color: rgba(128, 176, 171, 0.3); /* #80b0ab with 30% opacity */
+  color: #2A2A2A;
+}
+
+::-moz-selection {
+  background-color: rgba(128, 176, 171, 0.3); /* #80b0ab with 30% opacity */
+  color: #2A2A2A;
+}
+
+@layer base {
+  html {
+    font-family: futura-pt, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 700; /* Heavy weight for headings */
+  }
+  
+  body {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400; /* Book weight for body text */
+  }
+}
+
+/* Container control */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
