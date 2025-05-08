@@ -69,10 +69,10 @@ const SobreMiEducation = () => {
                 Formación académica
               </h2>
               <p className="text-xl md:text-2xl font-book font-futura-pt italic text-[#98b475] leading-snug relative pl-8 pr-4 py-4 my-4 border-l-4 border-[#98b475] bg-[#F8FAF5]/10 rounded-r-lg">
-                <span className="absolute -left-0 top-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">"</span>
+                <span className="absolute -left-0 top-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">&quot;</span>
                 LA EDUCACIÓN PUEDE VERSE COMO UN DERECHO, UN VALOR, UNA CIENCIA Y MUCHAS
                 COSAS MÁS. PARA MÍ ES EL ARMA MÁS PODEROSA PARA TRANSFORMAR AL MUNDO.
-                <span className="absolute -right 1 bottom-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">"</span>
+                <span className="absolute -right 1 bottom-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">&quot;</span>
               </p>
             </motion.div>
           </div>
