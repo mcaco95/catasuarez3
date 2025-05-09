@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { HiMail } from 'react-icons/hi';
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaYoutube, FaMapMarkerAlt } from 'react-icons/fa';
-import { getCloudinaryUrl } from '@/utils/cloudinary';
 
 const ContactInput = ({ label, type, value, onChange, required = true, as = 'input' }: {
   label: string;
@@ -104,9 +103,7 @@ const ContactLink = ({ icon: Icon, href, label, text }: {
 
 const Contacto = () => {
   const { scrollY } = useScroll();
-  const mobileScale = useTransform(scrollY, [0, 300], [1, 1.05]);
   const [isTouch, setIsTouch] = useState(false);
-  const [scrollDirection, setScrollDirection] = useState<'up' | 'down' | null>(null);
   const lastScrollY = useSpring(0);
 
   useEffect(() => {
@@ -114,8 +111,6 @@ const Contacto = () => {
   }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const direction = latest > lastScrollY.get() ? 'down' : 'up';
-    setScrollDirection(direction);
     lastScrollY.set(latest);
   });
 
