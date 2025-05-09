@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
-import { FaInstagram, FaFacebook, FaLinkedinIn, FaYoutube, FaTimes, FaBars } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaLinkedinIn, FaYoutube, FaTimes, FaBars, FaTiktok } from 'react-icons/fa';
 import { usePathname } from 'next/navigation';
 import useMagneticHover from '../hooks/useMagneticHover';
 import { useEffect, useState } from 'react';
@@ -322,6 +322,11 @@ const Navigation = () => {
       icon: FaYoutube, 
       href: 'https://youtube.com/@catasuarez6063',
       label: 'YouTube'
+    },
+    { 
+      icon: FaTiktok, 
+      href: 'https://www.tiktok.com/@catasuarezeducacion',
+      label: 'TikTok'
     }
   ];
 

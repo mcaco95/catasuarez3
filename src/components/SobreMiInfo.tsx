@@ -7,19 +7,34 @@ import { getCloudinaryUrl } from '@/utils/cloudinary';
 const SobreMiInfo = () => {
   return (
     <section className="py-8 md:py-16 bg-gradient-to-b from-white to-[#F8FAF5]">
-      {/* Hero Section */}
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+        {/* Title Section - Moved Above Grid */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mb-8 md:mb-12 text-center md:text-left"
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heavy font-futura-pt text-[#98b475] leading-tight">
+            El día que mi vida <span className="text-[#98b475]">cambió</span>
+          </h2>
+          <div className="w-24 h-2 bg-gradient-to-r from-[#98b475] to-[#98b475]/60 rounded-full mt-4 mx-auto md:mx-0" />
+        </motion.div>
+
+        {/* Two Column Grid for Image and Text Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start">
+          {/* Left Column: Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.2 }} // Adjusted delay
             className="relative aspect-[3/4] md:aspect-[4/3] rounded-lg overflow-hidden shadow-2xl"
           >
             <Image
               src={getCloudinaryUrl('/IMG_1980_jkklvm.jpg')}
-              alt="Cata Suárez en su biblioteca"
+              alt="Cata Suárez con su hijo"
               fill
               className="object-cover object-[70%_center]"
               quality={100}
@@ -27,17 +42,14 @@ const SobreMiInfo = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent" />
           </motion.div>
 
+          {/* Right Column: Quote and Paragraphs */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8 md:space-y-12"
+            transition={{ duration: 0.8, delay: 0.3 }} // Adjusted delay
+            className="space-y-6 md:space-y-8" // Removed larger top margin from here
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heavy font-futura-pt text-[#98b475] leading-tight">
-              El día que mi vida <span className="text-[#98b475]">cambió</span>
-            </h2>
-            <div className="w-24 h-2 bg-gradient-to-r from-[#98b475] to-[#98b475]/60 rounded-full" />
             <p className="text-lg md:text-xl lg:text-2xl font-book font-futura-pt text-[#2A2A2A]/80 leading-relaxed italic">
               &ldquo;Cuando nació mi hijo sietemesino, descubrí mi verdadera misión en la vida...&rdquo;
             </p>

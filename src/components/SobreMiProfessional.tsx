@@ -124,7 +124,7 @@ const SobreMiProfessional = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
             <motion.div 
-              className="bg-white rounded-xl shadow-2xl p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 group cursor-pointer relative overflow-hidden"
+              className="bg-white rounded-xl shadow-2xl p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 group cursor-pointer relative overflow-hidden border-l-4 border-[#006838] hover:border-l-[#98b475]"
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -145,7 +145,7 @@ const SobreMiProfessional = () => {
             </div>
             </motion.div>
             <motion.div 
-              className="bg-[#006838] text-white rounded-xl shadow-2xl p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 group cursor-pointer overflow-hidden relative"
+              className="bg-[#006838] text-white rounded-xl shadow-2xl p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 group cursor-pointer overflow-hidden relative border-l-4 border-white hover:border-gray-200"
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -166,7 +166,7 @@ const SobreMiProfessional = () => {
             </div>
             </motion.div>
             <motion.div 
-              className="bg-white rounded-xl shadow-2xl p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 group cursor-pointer relative overflow-hidden"
+              className="bg-white rounded-xl shadow-2xl p-2 sm:p-2 md:p-2 lg:p-3 xl:p-4 group cursor-pointer relative overflow-hidden border-l-4 border-[#006838] hover:border-l-[#98b475]"
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
@@ -240,11 +240,10 @@ const SobreMiProfessional = () => {
                 </motion.div>
 
                 <motion.div 
-                  className="relative bg-white rounded-2xl shadow-2xl overflow-hidden group"
+                  className="relative bg-white rounded-2xl shadow-2xl overflow-hidden group border-l-4 border-[#006838] hover:border-l-[#98b475]"
                   whileHover={{ y: -5, scale: 1.01 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#006838] to-[#98B475]" />
                   <div className="absolute inset-0 bg-[#006838]/5 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
                   <div className="p-8 md:p-10 relative">
                     <h3 className="text-3xl md:text-4xl font-heavy font-futura-pt text-[#006838] mb-6 relative inline-block group-hover:text-[#006838]/90 transition-colors duration-300">
@@ -293,7 +292,7 @@ const SobreMiProfessional = () => {
           </motion.div>
 
                 <motion.div 
-                  className="bg-[#98B475] rounded-2xl shadow-2xl text-white relative overflow-hidden group cursor-pointer"
+                  className="bg-[#98B475] rounded-2xl shadow-2xl text-white relative overflow-hidden group cursor-pointer border-l-4 border-white hover:border-gray-200"
                   whileHover={{ y: -5, scale: 1.01 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -344,7 +343,7 @@ const SobreMiProfessional = () => {
 
               <div className="space-y-8">
               <motion.div
-                  className="bg-white rounded-2xl shadow-2xl overflow-hidden group"
+                  className="bg-white rounded-2xl shadow-2xl overflow-hidden group border-l-4 border-[#006838] hover:border-l-[#98b475]"
                   whileHover={{ scale: 1.01 }}
                   transition={{ duration: 0.3 }}
               >
@@ -362,7 +361,7 @@ const SobreMiProfessional = () => {
                 </motion.div>
 
                 <motion.div 
-                  className="bg-[#006838] rounded-2xl shadow-2xl text-white overflow-hidden group"
+                  className="bg-[#006838] rounded-2xl shadow-2xl text-white overflow-hidden group border-l-4 border-white hover:border-gray-200"
                   whileHover={{ scale: 1.01 }}
                   transition={{ duration: 0.3 }}
                 >

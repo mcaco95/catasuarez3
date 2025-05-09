@@ -146,79 +146,67 @@ const Contacto = () => {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Hero Section */}
+      {/* Hero Section - MODIFIED FOR TWO COLUMNS */}
       <motion.section 
-        className="relative h-screen overflow-hidden"
+        className="relative min-h-screen md:h-screen flex flex-col md:flex-row overflow-hidden bg-[#F0F3EE]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4 }}
       >
-        <motion.div 
-          className="absolute inset-0"
-          style={{
-            scale: isTouch ? mobileScale : undefined
-          }}
-        >
-          <Image
-            src={getCloudinaryUrl('/images/RBS_3467.png')}
-            alt="Contacto Hero"
-            fill
-            className="object-cover object-[70%_35%] md:object-[center_25%]"
-            quality={100}
-            priority
-          />
+        {/* Left Column (Text & Background) */}
+        <div className="w-full md:w-1/2 lg:w-3/5 bg-[#F0F3EE] p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col justify-center order-2 md:order-1">
           <motion.div 
-            className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-transparent"
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: isTouch ? (scrollDirection === 'down' ? 0.4 : 0.3) : 1
-            }}
-            transition={{
-              duration: isTouch ? 0.3 : 1.6,
-              delay: isTouch ? 0 : 0.2
-            }}
-          />
-        </motion.div>
-
-        <div className="relative container mx-auto h-full flex items-center px-6 md:px-0">
-          <motion.div 
-            className="max-w-xl md:max-w-3xl md:pl-[8%]"
+            className="max-w-xl"
             {...(isTouch ? mobileAnimationProps : {
               initial: { opacity: 0, y: 30 },
               animate: { opacity: 1, y: 0 },
               transition: { duration: 0.8, delay: 0.4 }
             })}
           >
-            <h1 className="text-5xl md:text-6xl font-heavy font-futura-pt mb-4 md:mb-6 text-white leading-tight drop-shadow-lg">
+            <h1 className="text-5xl md:text-6xl font-heavy font-futura-pt mb-4 md:mb-6 text-[#004422] leading-tight">
               Conectemos y transformemos <br />
-              <span className="text-[#98B475]">juntos</span>
+              <span className="text-[#5C8A3F]">juntos</span>
             </h1>
-            <p className="text-lg md:text-xl font-book font-futura-pt text-white/90 leading-relaxed max-w-lg md:max-w-2xl drop-shadow-lg">
-              Estoy aquí para escucharte y ayudarte a alcanzar tu máximo potencial educativo.
+            <p className="text-lg md:text-xl font-book font-futura-pt text-gray-700 leading-relaxed max-w-lg md:max-w-2xl">
+              Estoy aquí para escucharte y ayudarte a alcanzar tu máximo potencial.
               Cada conversación es un paso hacia el cambio positivo.
             </p>
           </motion.div>
         </div>
+
+        {/* Right Column (Image) */}
+        <div className="w-full md:w-1/2 lg:w-2/5 h-[65vh] sm:h-[75vh] md:h-full relative order-1 md:order-2">
+          <Image
+            src="https://res.cloudinary.com/dqgqrvnnw/image/upload/v1746713527/foto_cata_mem5l8.jpg"
+            alt="Catalina Suárez - Contacto"
+            fill
+            className="object-cover object-center md:object-[center_top]"
+            quality={90}
+            priority
+          />
+        </div>
+        
+        {/* Mobile Scroll Down Hint - Retained but might need style adjustments if it overlaps weirdly now */}
         {isTouch && (
           <motion.div
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center z-20"
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 md:hidden flex flex-col items-center z-20 order-3"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.5 }}
           >
             <motion.div
-              className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center p-2"
+              className="w-6 h-10 border-2 border-gray-600/50 rounded-full flex justify-center p-2"
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
             >
               <motion.div
-                className="w-1 h-2 bg-white/80 rounded-full"
+                className="w-1 h-2 bg-gray-700/80 rounded-full"
                 animate={{ y: [0, 4, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
               />
             </motion.div>
             <motion.span
-              className="text-white/60 text-xs md:text-sm mt-2 font-futura-pt font-book"
+              className="text-gray-600/80 text-xs md:text-sm mt-2 font-futura-pt font-book"
               animate={{ opacity: [0.6, 1, 0.6] }}
               transition={{ duration: 2, repeat: Infinity, repeatType: "loop" }}
             >

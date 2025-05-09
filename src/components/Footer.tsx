@@ -2,8 +2,25 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaYoutube, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaWhatsapp, FaYoutube, FaFacebook, FaTiktok } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
+
+const slugify = (text: string) => {
+  const accentMap: { [key: string]: string } = {
+    'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
+    'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U',
+    'ñ': 'n', 'Ñ': 'N'
+  };
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/[áéíóúÁÉÍÓÚñÑ]/g, (match) => accentMap[match] || match)
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/[^\w-]+/g, '') // Remove all non-word chars
+    .replace(/--+/g, '-') // Replace multiple - with single -
+    .replace(/^-+/, '') // Trim - from start of text
+    .replace(/-*$/, ''); // Trim - from end of text
+};
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -63,10 +80,10 @@ const Footer = () => {
               />
             </h3>
             <nav className="space-y-3 font-futura-pt font-book">
-              {['Inicio', 'Sobre Mi', 'Casos de exito', 'Programas', 'Contacto'].map((item) => (
+              {['Inicio', 'Sobre mí', 'Casos de éxito', 'Programas', 'Contacto'].map((item) => (
                 <Link 
                   key={item}
-                  href={item === 'Inicio' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`}
+                  href={item === 'Inicio' ? '/' : `/${slugify(item)}`}
                   className="block hover:text-[#006838] transition-colors duration-300 relative group"
                 >
                   <span className="relative z-10">{item}</span>
@@ -124,6 +141,14 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-[#006838] hover:bg-[#006838] transition-all duration-300 group"
               >
                 <FaYoutube className="text-xl group-hover:text-white" />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@catasuarezeducacion"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-[#006838] hover:bg-[#006838] transition-all duration-300 group"
+              >
+                <FaTiktok className="text-xl group-hover:text-white" />
               </a>
             </div>
             <h4 className="text-lg font-futura-pt font-heavy relative inline-block">

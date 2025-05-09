@@ -125,7 +125,7 @@ export default function LogoCarousel() {
       <div className="absolute right-0 bottom-0 w-40 h-40 bg-[#006838]/5 rounded-full translate-x-20 translate-y-20" />
       
       <div className="container mx-auto px-4 md:px-8 relative">
-        <div className="max-w-3xl mx-auto mb-1 md:mb-2">
+        <div className="max-w-3xl mx-auto mb-1 md:mb-2 mt-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -104,16 +104,16 @@ const SobreMiHero = () => {
               </h3>
               <div className="space-y-4 md:space-y-6">
                 <p className="font-book font-futura-pt leading-relaxed text-base md:text-lg text-white px-4 md:px-0 drop-shadow-sm">
-                  <strong>A los 19 años</strong>, fui <strong className="text-[#5C8A3F]">voluntaria</strong> por un año de un <strong>proyecto social y educativo</strong> en el <strong className="text-[#5C8A3F]">centro de México</strong>.
+                  A los 19 años, <strong className="text-[#5C8A3F]">fui voluntaria</strong> por un año de un proyecto social y educativo en el centro de México.
                 </p>
                 <p className="font-book font-futura-pt leading-relaxed text-base md:text-lg text-white px-4 md:px-0 drop-shadow-sm">
-                  Trabajé como <strong>psicóloga</strong> del <strong className="text-[#5C8A3F]">colegio Vermont de Medellín</strong> y con la <strong>Presidencia de Colombia</strong> en <strong className="text-[#5C8A3F]">programas de desarrollo alternativo</strong>.
+                  <strong className="text-[#5C8A3F]">Trabajé como psicóloga</strong> del colegio Vermont de Medellín y con la Presidencia de Colombia en programas de desarrollo alternativo.
                 </p>
                 <p className="font-book font-futura-pt leading-relaxed text-base md:text-lg text-white px-4 md:px-0 drop-shadow-sm">
-                  Para el <strong>Gobierno de Colombia</strong> desarrollé programas para la promoción de la <strong className="text-[#5C8A3F]">cultura de la legalidad</strong> dirigidos hacia grupos de <strong>campesinos, indígenas y afrodescendientes</strong> involucrados en el <strong className="text-[#5C8A3F]">negocio de las drogas ilícitas</strong>.
+                  Para el Gobierno de Colombia <strong className="text-[#5C8A3F]">desarrollé programas para la promoción de la cultura de la legalidad</strong> dirigidos hacia grupos de campesinos, indígenas y afrodescendientes involucrados en el negocio de las drogas ilícitas.
                 </p>
                 <p className="font-book font-futura-pt leading-relaxed text-base md:text-lg text-white px-4 md:px-0 drop-shadow-sm">
-                  Luego volví a la <strong>educación</strong> y trabajé con <strong className="text-[#5C8A3F]">fundaciones</strong> para la <strong>promoción de la primera infancia</strong>.
+                  Luego volví a la educación y <strong className="text-[#5C8A3F]">trabajé con fundaciones</strong> para la promoción de la primera infancia.
                 </p>
               </div>
             </motion.div>

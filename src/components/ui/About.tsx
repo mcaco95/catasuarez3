@@ -101,7 +101,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             >
-              Aprender es mi pasion 
+              Aprender es mi pasión 
               <br />
               y enseñar es mi misión
             </motion.h2>
@@ -142,7 +142,7 @@ const About = () => {
                 EXPERIENCIA PROFESIONAL
                 </h3>
                 <p className="font-book font-futura-pt leading-relaxed text-base text-white/90">
-                Desde los 19 años estoy trabajando con programas Sociales y educativos de gran alcance. He trabajado en diferentes contextos educativos y sociales, Públicos, privados y fundacionales. También fui docente por 6 años de la Maestría en salud mental de la Universidad Pontificia Bolivariana con la cátedra “Promoción en Salud Mental y Prevención de Trastornos Mentales”.
+                Desde los 19 años estoy trabajando con programas Sociales y educativos de gran alcance. He trabajado en diferentes contextos educativos y sociales, públicos, privados y fundacionales. También fui docente por 6 años de la Maestría en salud mental de la Universidad Pontificia Bolivariana con la cátedra “Promoción en Salud Mental y Prevención de Trastornos Mentales”.
                 </p>
               </motion.div>
             </motion.div>

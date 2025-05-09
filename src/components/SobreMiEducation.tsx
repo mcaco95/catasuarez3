@@ -32,7 +32,7 @@ const SobreMiEducation = () => {
     <motion.section
       ref={sectionRef}
       id="education"
-      className="relative w-full bg-[#F8FAF5] py-8 md:py-12 overflow-hidden"
+      className="relative w-full bg-[#F8FAF5] pt-8 md:pt-12 overflow-hidden"
     >
       {/* Hero Section - Shorter height */}
       <motion.div 
@@ -70,9 +70,9 @@ const SobreMiEducation = () => {
               </h2>
               <p className="text-xl md:text-2xl font-book font-futura-pt italic text-[#98b475] leading-snug relative pl-8 pr-4 py-4 my-4 border-l-4 border-[#98b475] bg-[#F8FAF5]/10 rounded-r-lg">
                 <span className="absolute -left-0 top-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">&quot;</span>
-                LA EDUCACIÓN PUEDE VERSE COMO UN DERECHO, UN VALOR, UNA CIENCIA Y MUCHAS
-                COSAS MÁS. PARA MÍ ES EL ARMA MÁS PODEROSA PARA TRANSFORMAR AL MUNDO.
-                <span className="absolute -right 1 bottom-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">&quot;</span>
+                La educación puede verse como un derecho, un valor, una ciencia y muchas
+                cosas más. Para mí es el arma más poderosa para transformar al mundo.
+                <span className="absolute -right-1 bottom-0 text-6xl text-[#98b475]/70 font-serif select-none leading-none">&quot;</span>
               </p>
             </motion.div>
           </div>
@@ -105,7 +105,7 @@ const SobreMiEducation = () => {
           
           {/* Card 1: UPB */}
           <motion.div
-            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-transparent hover:border-gray-200 overflow-hidden relative h-full flex flex-col transition-all duration-300 ease-out"
+            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#006838] hover:border-l-[#98b475] h-full flex flex-col transition-all duration-300 ease-out"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -130,7 +130,7 @@ const SobreMiEducation = () => {
 
           {/* Card 2: PDA */}
           <motion.div 
-            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-transparent hover:border-gray-200 overflow-hidden relative h-full flex flex-col transition-all duration-300 ease-out"
+            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#006838] hover:border-l-[#98b475] h-full flex flex-col transition-all duration-300 ease-out"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -157,7 +157,7 @@ const SobreMiEducation = () => {
 
           {/* Card 3: Berkeley/Additional */}
           <motion.div 
-            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border border-transparent hover:border-gray-200 overflow-hidden relative h-full flex flex-col transition-all duration-300 ease-out"
+            className="group bg-white rounded-2xl shadow-lg hover:shadow-xl border-l-4 border-[#006838] hover:border-l-[#98b475] h-full flex flex-col transition-all duration-300 ease-out"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -214,7 +214,7 @@ const SobreMiEducation = () => {
 
           {/* Card 5: UQ - MODIFIED to span 2 columns on desktop */}
           <motion.div
-            className="group bg-[#006838] hover:bg-[#005828] p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl text-white h-full flex flex-col md:col-span-2 transition-all duration-300 ease-out"
+            className="group bg-[#006838] hover:bg-[#005828] p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl text-white h-full flex flex-col md:col-span-2 transition-all duration-300 ease-out border-l-4 border-white hover:border-gray-200"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -239,7 +239,7 @@ const SobreMiEducation = () => {
       </div>
 
       {/* Logo Carousel with reduced height - MOVED HERE */}
-      <div className="mb-16">
+      <div>
         <LogoCarousel />
       </div>
     </motion.section>
