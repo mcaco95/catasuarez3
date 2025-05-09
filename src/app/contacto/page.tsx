@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useScroll, useTransform, useSpring, useMotionValueEvent } from 'framer-motion';
+import { motion, useScroll, useSpring, useMotionValueEvent } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { HiMail } from 'react-icons/hi';
